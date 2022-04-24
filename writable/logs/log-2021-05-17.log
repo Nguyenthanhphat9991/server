@@ -1,0 +1,46 @@
+ERROR - 2021-05-17 23:22:46 --> mysqli_sql_exception: Unknown column 'TenKhuVuc' in 'where clause' in /Applications/XAMPP/xamppfiles/htdocs/be/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/be/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/be/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/be/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/be/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/be/app/Models/M_ThongTinPhongTro.php(269): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/be/app/Controllers/DanhMucChoThue.php(333): App\Models\M_ThongTinPhongTro->get_timkiem('Proin')
+#6 /Applications/XAMPP/xamppfiles/htdocs/be/system/CodeIgniter.php(936): App\Controllers\DanhMucChoThue->timkiem('Proin')
+#7 /Applications/XAMPP/xamppfiles/htdocs/be/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DanhMucChoThue))
+#8 /Applications/XAMPP/xamppfiles/htdocs/be/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/be/public/index.php(56): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-05-17 23:22:49 --> mysqli_sql_exception: Unknown column 'TenKhuVuc' in 'where clause' in /Applications/XAMPP/xamppfiles/htdocs/be/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/be/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/be/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/be/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/be/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/be/app/Models/M_ThongTinPhongTro.php(269): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/be/app/Controllers/DanhMucChoThue.php(333): App\Models\M_ThongTinPhongTro->get_timkiem('Proin')
+#6 /Applications/XAMPP/xamppfiles/htdocs/be/system/CodeIgniter.php(936): App\Controllers\DanhMucChoThue->timkiem('Proin')
+#7 /Applications/XAMPP/xamppfiles/htdocs/be/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DanhMucChoThue))
+#8 /Applications/XAMPP/xamppfiles/htdocs/be/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/be/public/index.php(56): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2021-05-17 23:22:56 --> mysqli_sql_exception: Unknown column 'TenKhuVuc' in 'where clause' in /Applications/XAMPP/xamppfiles/htdocs/be/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/be/system/Database/MySQLi/Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/be/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/be/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/be/system/Database/BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/be/app/Models/M_ThongTinPhongTro.php(269): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/XAMPP/xamppfiles/htdocs/be/app/Controllers/DanhMucChoThue.php(333): App\Models\M_ThongTinPhongTro->get_timkiem('Proin')
+#6 /Applications/XAMPP/xamppfiles/htdocs/be/system/CodeIgniter.php(936): App\Controllers\DanhMucChoThue->timkiem('Proin')
+#7 /Applications/XAMPP/xamppfiles/htdocs/be/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DanhMucChoThue))
+#8 /Applications/XAMPP/xamppfiles/htdocs/be/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/be/public/index.php(56): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-17 23:53:37 --> Trying to access array offset on value of type null
+#0 /Applications/XAMPP/xamppfiles/htdocs/be/app/Controllers/C_Login.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', '/Applications/X...', 95)
+#1 /Applications/XAMPP/xamppfiles/htdocs/be/system/CodeIgniter.php(936): App\Controllers\C_Login->login()
+#2 /Applications/XAMPP/xamppfiles/htdocs/be/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#3 /Applications/XAMPP/xamppfiles/htdocs/be/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/be/public/index.php(56): CodeIgniter\CodeIgniter->run()
+#5 {main}

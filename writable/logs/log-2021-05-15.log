@@ -1,0 +1,478 @@
+CRITICAL - 2021-05-15 10:50:08 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\be\app\Controllers\C_Login.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 95)
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\be\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-15 10:53:18 --> Undefined array key 1
+#0 C:\xampp\htdocs\be\app\Controllers\Home.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 27)
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\be\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-15 10:53:33 --> Undefined array key 1
+#0 C:\xampp\htdocs\be\app\Controllers\Home.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 27)
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\be\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-15 10:55:50 --> Undefined array key 1
+#0 C:\xampp\htdocs\be\app\Controllers\Home.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 27)
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\be\public\index.php(48): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-15 11:15:24 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\be\app\Controllers\C_Login.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 95)
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\be\public\index.php(52): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-15 11:18:59 --> Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\be\app\Config\Events.php:35)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 10)
+#1 C:\xampp\htdocs\be\app\Controllers\C_Login.php(10): header('Access-Control-...')
+#2 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(294): include_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#6 C:\xampp\htdocs\be\system\CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#7 C:\xampp\htdocs\be\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#8 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\be\public\index.php(49): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-15 11:18:59 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\be\app\Config\Events.php:35) in C:\xampp\htdocs\be\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\be\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-15 11:19:01 --> Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\be\app\Config\Events.php:35)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 10)
+#1 C:\xampp\htdocs\be\app\Controllers\C_Login.php(10): header('Access-Control-...')
+#2 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(294): include_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#6 C:\xampp\htdocs\be\system\CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#7 C:\xampp\htdocs\be\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#8 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\be\public\index.php(49): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-15 11:19:01 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\be\app\Config\Events.php:35) in C:\xampp\htdocs\be\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\be\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-15 11:19:04 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\be\app\Config\Events.php:35) in C:\xampp\htdocs\be\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\be\system\Debug\Exceptions.php(137): header('HTTP/1.1 404 No...', true, 404)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-15 11:19:04 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\be\app\Config\Events.php:35) in C:\xampp\htdocs\be\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\be\system\Debug\Exceptions.php(137): header('HTTP/1.1 404 No...', true, 404)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-15 11:19:04 --> Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\be\app\Config\Events.php:35)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\be\app\Controllers\DanhMucChoThue.php(12): header('Access-Control-...')
+#2 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(294): include_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#6 C:\xampp\htdocs\be\system\CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#7 C:\xampp\htdocs\be\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#8 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\be\public\index.php(49): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-15 11:19:04 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\be\app\Config\Events.php:35) in C:\xampp\htdocs\be\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\be\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-15 11:19:04 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\be\app\Config\Events.php:35) in C:\xampp\htdocs\be\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\be\system\Debug\Exceptions.php(137): header('HTTP/1.1 404 No...', true, 404)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-15 11:19:07 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\be\app\Config\Events.php:35) in C:\xampp\htdocs\be\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\be\system\Debug\Exceptions.php(137): header('HTTP/1.1 404 No...', true, 404)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-15 11:19:07 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\be\app\Config\Events.php:35) in C:\xampp\htdocs\be\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\be\system\Debug\Exceptions.php(137): header('HTTP/1.1 404 No...', true, 404)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-15 11:19:16 --> Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\be\app\Config\Events.php:35)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 10)
+#1 C:\xampp\htdocs\be\app\Controllers\C_Login.php(10): header('Access-Control-...')
+#2 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(294): include_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#6 C:\xampp\htdocs\be\system\CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#7 C:\xampp\htdocs\be\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#8 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\be\public\index.php(49): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-15 11:19:16 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\be\app\Config\Events.php:35) in C:\xampp\htdocs\be\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\be\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-15 11:19:18 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\be\app\Config\Events.php:35) in C:\xampp\htdocs\be\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\be\system\Debug\Exceptions.php(137): header('HTTP/1.1 404 No...', true, 404)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-15 11:19:18 --> Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\be\app\Config\Events.php:35)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\be\app\Controllers\DanhMucChoThue.php(12): header('Access-Control-...')
+#2 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(294): include_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#6 C:\xampp\htdocs\be\system\CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#7 C:\xampp\htdocs\be\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#8 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\be\public\index.php(49): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-05-15 11:19:18 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\be\app\Config\Events.php:35) in C:\xampp\htdocs\be\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\be\system\Debug\Exceptions.php(137): header('HTTP/1.1 500 In...', true, 500)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-15 11:19:20 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\be\app\Config\Events.php:35) in C:\xampp\htdocs\be\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\be\system\Debug\Exceptions.php(137): header('HTTP/1.1 404 No...', true, 404)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-15 11:19:20 --> Uncaught ErrorException: Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\be\app\Config\Events.php:35) in C:\xampp\htdocs\be\system\Debug\Exceptions.php:137
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Cannot modify h...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\be\system\Debug\Exceptions.php(137): header('HTTP/1.1 404 No...', true, 404)
+#2 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#3 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-05-15 13:49:03 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\be\app\Controllers\C_Login.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 95)
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-15 13:49:10 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\be\app\Controllers\C_Login.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 95)
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-15 13:49:10 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\be\app\Controllers\C_Login.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 95)
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-15 13:49:11 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\be\app\Controllers\C_Login.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 95)
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-15 13:49:12 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\be\app\Controllers\C_Login.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 95)
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-15 13:49:27 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\be\app\Controllers\C_Login.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 95)
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-15 13:49:27 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\be\app\Controllers\C_Login.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 95)
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-15 13:50:12 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\be\app\Controllers\C_Login.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 95)
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-15 13:50:13 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\be\app\Controllers\C_Login.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 95)
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-15 13:50:14 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\be\app\Controllers\C_Login.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 95)
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-15 14:13:42 --> Undefined variable $expire_claim
+#0 C:\xampp\htdocs\be\app\Controllers\C_Login.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 106)
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-15 14:13:43 --> Undefined variable $expire_claim
+#0 C:\xampp\htdocs\be\app\Controllers\C_Login.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 106)
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-15 14:13:44 --> Undefined variable $expire_claim
+#0 C:\xampp\htdocs\be\app\Controllers\C_Login.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 106)
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-15 14:13:57 --> Undefined variable $time
+#0 C:\xampp\htdocs\be\app\Controllers\C_Login.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 106)
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-15 14:17:12 --> Unknown HTTP status code provided with no message: 222
+#0 C:\xampp\htdocs\be\system\HTTP\ResponseTrait.php(132): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(222)
+#1 C:\xampp\htdocs\be\system\API\ResponseTrait.php(121): CodeIgniter\HTTP\Response->setStatusCode(222, '')
+#2 C:\xampp\htdocs\be\app\Controllers\C_Login.php(138): CodeIgniter\RESTful\ResourceController->respond(Array, 222)
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#4 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#5 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-15 14:17:14 --> Unknown HTTP status code provided with no message: 222
+#0 C:\xampp\htdocs\be\system\HTTP\ResponseTrait.php(132): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(222)
+#1 C:\xampp\htdocs\be\system\API\ResponseTrait.php(121): CodeIgniter\HTTP\Response->setStatusCode(222, '')
+#2 C:\xampp\htdocs\be\app\Controllers\C_Login.php(138): CodeIgniter\RESTful\ResourceController->respond(Array, 222)
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#4 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#5 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-15 14:17:14 --> Unknown HTTP status code provided with no message: 222
+#0 C:\xampp\htdocs\be\system\HTTP\ResponseTrait.php(132): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(222)
+#1 C:\xampp\htdocs\be\system\API\ResponseTrait.php(121): CodeIgniter\HTTP\Response->setStatusCode(222, '')
+#2 C:\xampp\htdocs\be\app\Controllers\C_Login.php(138): CodeIgniter\RESTful\ResourceController->respond(Array, 222)
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#4 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#5 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-15 14:17:15 --> Unknown HTTP status code provided with no message: 222
+#0 C:\xampp\htdocs\be\system\HTTP\ResponseTrait.php(132): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(222)
+#1 C:\xampp\htdocs\be\system\API\ResponseTrait.php(121): CodeIgniter\HTTP\Response->setStatusCode(222, '')
+#2 C:\xampp\htdocs\be\app\Controllers\C_Login.php(138): CodeIgniter\RESTful\ResourceController->respond(Array, 222)
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#4 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#5 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-15 14:17:15 --> Unknown HTTP status code provided with no message: 222
+#0 C:\xampp\htdocs\be\system\HTTP\ResponseTrait.php(132): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(222)
+#1 C:\xampp\htdocs\be\system\API\ResponseTrait.php(121): CodeIgniter\HTTP\Response->setStatusCode(222, '')
+#2 C:\xampp\htdocs\be\app\Controllers\C_Login.php(138): CodeIgniter\RESTful\ResourceController->respond(Array, 222)
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#4 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#5 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-15 14:17:16 --> Unknown HTTP status code provided with no message: 222
+#0 C:\xampp\htdocs\be\system\HTTP\ResponseTrait.php(132): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(222)
+#1 C:\xampp\htdocs\be\system\API\ResponseTrait.php(121): CodeIgniter\HTTP\Response->setStatusCode(222, '')
+#2 C:\xampp\htdocs\be\app\Controllers\C_Login.php(138): CodeIgniter\RESTful\ResourceController->respond(Array, 222)
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#4 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#5 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-15 14:17:17 --> Unknown HTTP status code provided with no message: 222
+#0 C:\xampp\htdocs\be\system\HTTP\ResponseTrait.php(132): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(222)
+#1 C:\xampp\htdocs\be\system\API\ResponseTrait.php(121): CodeIgniter\HTTP\Response->setStatusCode(222, '')
+#2 C:\xampp\htdocs\be\app\Controllers\C_Login.php(138): CodeIgniter\RESTful\ResourceController->respond(Array, 222)
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\C_Login->login()
+#4 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_Login))
+#5 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-15 14:25:01 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-15 14:25:02 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-15 14:25:04 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-15 14:25:04 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-15 14:25:05 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-15 14:25:39 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-15 14:25:40 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-15 14:27:49 --> Undefined constant "App\Controllers\data"
+#0 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-15 14:29:01 --> syntax error, unexpected token "->"
+#0 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\be\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-15 14:29:02 --> syntax error, unexpected token "->"
+#0 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\be\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-15 14:29:03 --> syntax error, unexpected token "->"
+#0 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\be\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-15 14:29:19 --> syntax error, unexpected token "->"
+#0 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\be\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-15 14:29:20 --> syntax error, unexpected token "->"
+#0 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\be\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\be\system\CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\be\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-15 14:32:51 --> Undefined constant "App\Controllers\token"
+#0 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-15 14:33:07 --> Undefined constant "App\Controllers\token"
+#0 C:\xampp\htdocs\be\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\be\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\be\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\be\public\index.php(56): CodeIgniter\CodeIgniter->run()
+#4 {main}
